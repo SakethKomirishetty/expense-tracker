@@ -1,0 +1,19 @@
+#btn1{
+        width: 100%;
+        margin-top: 15px;
+        height: 38px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background-color: #727171;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        cursor: pointer;
+        box-shadow: -5px -5px 8px #d8e2e6, 5px 5px 10px #2c313378;
+        transition: 0.8s;
+}
+#btn1:hover {
+    background-color: #535658;
+    box-shadow: inset 5px 5px 10px #05050578, inset -5px -5px 10px #9e9c9c;
+  }

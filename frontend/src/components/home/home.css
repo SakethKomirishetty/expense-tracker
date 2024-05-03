@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+.main-container {
+  height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: hsla(151, 70%, 91%, 0.8);
+}
+.logo-header {
+  background-color: black;
+  padding: 5px;
+}
+.logo-header h1 {
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+.sub-container {
+  display: flex;
+  width: 100vw;
+  padding: 20px 40px;
+}
+.sub-container .img-container {
+  width: 40%;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+.app-heading {
+  width: 60%;
+  padding: 1rem;
+  /* border: 1px solid #000; */
+  text-align: end;
+}
+.app-heading h1 {
+  line-height: 1.3;
+  /* text-shadow: 2px -2px 30px rgba(75, 207, 14, 0.603); */
+  font-size: 6rem;
+  margin: 0;
+  margin-top: 2.5rem;
+  font-weight: 400;
+}
+.app-heading *::selection {
+  background-color: rgb(151, 245, 193);
+}
+.user-account-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.user-account-buttons button {
+  border: none;
+  cursor: pointer;
+  margin: 0 1rem;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(to right, #117e2c, #117e2c);
+}
+.user-account-buttons button:hover {
+  background: linear-gradient(to right, #117e2c, #117e2c);
+}
+.app-heading span {
+  font-size: 30px;
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: 200;
+}
+.credit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 13px;
+  color: rgb(39, 38, 38);
+  position: fixed;
+  bottom: 1%;
+}
+@media (max-width: 768px) {
+  .sub-container {
+    flex-flow: column-reverse;
+  }
+  .sub-container .img-container,
+  .app-heading {
+    width: auto;
+  }
+  .app-heading h1 {
+    font-size: 2rem;
+  }
+  .app-heading {
+    text-align: center;
+  }
+  .app-heading span {
+    font-size: 1rem;
+  }
+  .user-account-buttons {
+    justify-content: center;
+  }
+}
